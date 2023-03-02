@@ -9,6 +9,8 @@
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+    --white: #fff;
 }
 
 * {
@@ -17,3 +19,228 @@
     box-sizing: border-box;
 }
 
+header {
+    background: var(--Very-Pale-Cyan) url(../images/bg-hero-desktop.svg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.header-main {
+    width: 1300px;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.top-btn button {
+    background-color: white;
+    font-family: var(--font-poppins);
+    font-size: 1em;
+    padding: 16px;
+    width: 240px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.072);
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+.top-btn button:hover {
+    background-color: rgb(247, 247, 247);
+    color: hsl(208, 11%, 55%);
+    cursor: pointer;
+}
+
+.header-mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-mid-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.header-mid-left h1 {
+    font-family: var(--font-open);
+    font-size: 2em;
+    max-width: 420px;
+}
+
+.header-mid-left p {
+    font-family: var(--font-poppins);
+    font-size: 15px;
+    color: var(--Very-Dark-Cyan);
+    max-width: 480px;
+}
+
+.mid-btn {
+    margin: 10px 0;
+}
+.mid-btn button {
+    background-color: var(--Pink);
+    color: white;
+    font-family: var(--font-poppins);
+    font-size: .8em;
+    padding: 18px;
+    width: 270px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.165);
+    border: none;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+.mid-btn button:hover {
+    background-color:rgb(250, 165, 220);
+    cursor: pointer;
+}
+
+.mid-img {
+    max-width: 610px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6em;
+    padding: 2em;
+}
+
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.8em 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.060);
+    width: 1140px;
+}
+
+.flowing {
+    flex-direction: row-reverse;
+}
+
+.sect-text {
+    font-family: var(--font-open);
+    font-size: .9em;
+    text-align: left;
+    max-width: 450px;
+}
+.sect-text p {
+    color: var(--Grayish-Blue);
+    margin-top: 16px;
+}
+
+.main-img {
+    width: 330px;
+}
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    padding: 2em;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+    margin: 20px;
+}
+
+.footer-w {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    max-width: 420px;
+}
+
+.footer-w p {
+    font-family: var(--font-open);
+    font-size: 16px;
+}
+
+.footer-first p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 1.2em;
+}
+.center-icon img{
+    padding-top: 5px;
+}
+
+.footer-ul-l ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.footer-ul-l a{
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    font-family: var(--font-open);
+}
+.footer-ul-l a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5em;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer-social svg {
+    stroke: white;
+    stroke-width: 1px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.footer-social svg:hover {
+    stroke: var(--Pink);
+    border-color: var(--Pink);
+}
+
+.copy {
+    font-family: var(--font-open);
+    color: var(--Grayish-Blue);
+}
