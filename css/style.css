@@ -317,6 +317,10 @@ footer {
         width: 460px;
     }
 
+    footer {
+        padding-bottom: 4em;
+    }
+
     .footer-flex {
         flex-direction: column;
         align-items: flex-start;
@@ -480,7 +484,7 @@ footer {
     }
 
     .back {
-        width: 310px;
+        width: 108%;
         padding: .8em;
     }
 
@@ -494,6 +498,7 @@ footer {
     }
 
     .ready span {
+        text-align: center;
         font-size: 1em;
     }
 
@@ -521,7 +526,7 @@ footer {
     }
 
     .back {
-        width: 110%;
+        width: 105%;
     }
 
     .main-img {
@@ -537,12 +542,12 @@ footer {
     }
 
     .ready {
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
 
     .ready button {
-        width: 78%;
+        width: 72%;
     }
 
     .footer-first .p-width {
